@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo2"> JavaScript can change HTML attribute values.</p>
+<!-- paragraph has id so you can interact with the element through your code> -->
+<p id="demo">In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+<!-- button - creates a button; onclick - assigns an action -->
+<button onclick="document.getElementById('demo').style.fontSize='85px'; document.getElementById('demo2').style.display='none'">Click Me!</button> 
+<!-- change font size and hide element -->
+<!-- document.getElementById - to interact with previously named elements -->
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">    
+<!-- id can be assigned to any element     -->
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'; document.getElementById('demo2').style.display='block'">Turn off the light</button> 
+<!-- turn off light and unhide element -->
+<!-- multiple commands within the same line separated by a ; and contained within the <element brackets> -->
+</body>
+</html>
